@@ -2,23 +2,56 @@ baseURL = 'https://example.org/'
 locale = 'en-US'
 title = 'Weblog'
 
+[params]
+  handle = '@yourname'
+  avatar = '/images/avatar.png'
+
 [menus]
   [[menus.main]]
     name = 'Home'
     pageRef = '/'
     weight = 10
+    [menus.main.params]
+      icon = 'home'
 
   [[menus.main]]
-    name = 'Posts'
+    name = 'Blog'
     pageRef = '/posts'
     weight = 20
+    [menus.main.params]
+      icon = 'book-open'
 
   [[menus.main]]
-    name = 'Tags'
-    pageRef = '/tags'
+    name = 'About'
+    pageRef = '/about'
     weight = 30
+    [menus.main.params]
+      icon = 'user'
 
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = '0.146.0'
+  [[menus.social]]
+    name = 'GitHub'
+    url = 'https://github.com/tuusuario'
+    weight = 10
+    [menus.social.params]
+      icon = 'github'
+
+  [[menus.social]]
+    name = 'Instagram'
+    url = 'https://github.com/tuusuario'
+    weight = 20
+    [menus.social.params]
+      icon = 'instagram'
+    
+  [[menus.social]]
+    name = 'Threads'
+    url = 'https://github.com/tuusuario'
+    weight = 30
+    [menus.social.params]
+      icon = 'threads'
+
+  [[menus.social]]
+    name = 'LinkedIn'
+    url = 'https://github.com/tuusuario'
+    weight = 40
+    [menus.social.params]
+      icon = 'linkedin'

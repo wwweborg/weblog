@@ -1,2 +1,22 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<a class="capsule profile" href="{{ site.Home.RelPermalink }}">
+  {{ with site.Params.avatar }}
+    <img src="{{ . | relURL }}" alt="" width="36" height="36">
+  {{ end }}
+  <span>{{ site.Params.handle }}</span>
+</a>
+
+<nav class="capsule" aria-label="Principal">
+  {{ range site.Menus.main }}
+    <a href="{{ .URL }}" aria-label="{{ .Name }}" title="{{ .Name }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>
+      {{ partial "icon.html" .Params.icon }}
+    </a>
+  {{ end }}
+
+  <span class="dot" aria-hidden="true"></span>
+
+  {{ range site.Menus.social }}
+    <a href="{{ .URL }}" rel="me" aria-label="{{ .Name }}" title="{{ .Name }}">
+      {{ partial "icon.html" .Params.icon }}
+    </a>
+  {{ end }}
+</nav>

@@ -1,0 +1,17 @@
+.highlight {
+  color: var(--accent);
+}
+
+.intro {
+  margin-block: 2rem 3rem;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+  color: var(--text);
+}
+
+.intro p {
+  margin: 0;
+}

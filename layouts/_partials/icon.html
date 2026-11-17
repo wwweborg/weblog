@@ -1,0 +1,5 @@
+{{- with . }}
+  {{- with resources.Get (printf "icons/%s.svg" .) }}
+    <span class="icon" aria-hidden="true">{{ .Content | safeHTML }}</span>
+  {{- end }}
+{{- end }}

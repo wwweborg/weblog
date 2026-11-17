@@ -1,4 +1,83 @@
+/* ===
+
+= Author: @jainnuck "github"
+
+#TableOfContent
+= 
+
+=== */
+
+/* [ Header Style ] */
 header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+    position: sticky;
+    top: 0.75rem;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 0 4rem 0;
+}
+
+.capsule {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    background: var(--sf);
+    border-radius: 5rem;
+    corner-shape: superellipse(1);
+}
+
+.profile {
+  gap: .6rem;
+  padding: 0 1rem 0 .4rem;
+  color: var(--text);
+  font-family: var(--fontSans);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.profile img {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav.capsule a {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+nav.capsule a:hover,
+nav.capsule a[aria-current="page"] {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  margin-inline: 0.357rem;
+  border-radius: 50%;
+  background: var(--muted);
+  opacity: 0.5;
+}
+
+.icon svg {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Los iconos de marcas no traen "fill", así que se pintan del color del texto */
+.icon svg:not([fill]) {
+  fill: currentColor;
 }

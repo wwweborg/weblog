@@ -20,6 +20,9 @@
 
 ========== */
 
+@import url('/css/components/header.css');
+@import url('/css/components/hero.css');
+
 /* [ Font Family: Golos Text ] */
 @font-face {
   font-family: 'Golos Text';
@@ -42,10 +45,12 @@
 :root {
   color-scheme: light dark;
 
-  --bg: light-dark(#F0F0F0, #0F0F0F);
+  --bg: light-dark(#FFF, #121212);
+  --sf: light-dark(#ECECEC, #191919);
   --text: light-dark(#191919, #EDEDED);
   --muted: light-dark(#767676, #8a8a8a);
-  --accent: light-dark(#2f6fed, #7aa2ff);
+  --accent: light-dark(#006FFF, #7aa2ff);
+  --border: light-dark(#CCC, #3F3F3F);
 
   --fontSans: 'Golos Text', system-ui, -apple-system;
   --fontMono: 'Roboto Mono', ui-monospace, "SF Mono";
@@ -67,5 +72,5 @@ header, main, footer {
 
 /* [ The codes use the 'Roboto Mono' font. ] */
 code, pre {
-  font-family: var(--font-mono);
+  font-family: var(--fontMono);
 }
