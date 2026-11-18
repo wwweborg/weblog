@@ -49,6 +49,7 @@
   --bg: light-dark(#FFF, #121212);
   --sf: light-dark(#ECECEC, #191919);
   --text: light-dark(#191919, #EDEDED);
+  --textP: light-dark(#3a3a3a, #c9c8c8);
   --muted: light-dark(#767676, #8a8a8a);
   --accent: light-dark(#006FFF, #7aa2ff);
   --border: light-dark(#CCC, #3F3F3F);
