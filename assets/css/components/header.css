@@ -7,8 +7,8 @@
 
 === */
 
-/* [ Header Style ] */
-header {
+/* [ Sticky site navigation ] */
+body > header {
     position: sticky;
     top: 0.75rem;
     z-index: 10;

@@ -1,10 +1,21 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <article class="entry{{ if eq .Section "posts" }} entry--post{{ end }}">
+  <header class="entry__header">
+    <h1>{{ .Title }}</h1>
+    {{ if eq .Section "posts" }}
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format ":date_long" }}
+      <div class="entry__meta">
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        <span aria-hidden="true">·</span>
+        <span>{{ .ReadingTime }} min read</span>
+      </div>
+    {{ end }}
+  </header>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-
-  {{ .Content }}
+  <div class="entry__content">
+    {{ .Content }}
+  </div>
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  </article>
 {{ end }}

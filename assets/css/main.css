@@ -22,6 +22,7 @@
 
 @import url('/css/components/header.css');
 @import url('/css/components/hero.css');
+@import url('/css/components/posts.css');
 
 /* [ Font Family: Golos Text ] */
 @font-face {
@@ -74,3 +75,4 @@ header, main, footer {
 code, pre {
   font-family: var(--fontMono);
 }
+
