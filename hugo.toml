@@ -36,28 +36,28 @@ title = 'Weblog'
 
   [[menus.social]]
     name = 'GitHub'
-    url = 'https://github.com/tuusuario'
+    url = 'https://github.com/yourname'
     weight = 10
     [menus.social.params]
       icon = 'github'
 
   [[menus.social]]
     name = 'Instagram'
-    url = 'https://github.com/tuusuario'
+    url = 'https://instagram.com/yourname'
     weight = 20
     [menus.social.params]
       icon = 'instagram'
     
   [[menus.social]]
     name = 'Threads'
-    url = 'https://github.com/tuusuario'
+    url = 'https://threads.com/yourname'
     weight = 30
     [menus.social.params]
       icon = 'threads'
 
   [[menus.social]]
     name = 'LinkedIn'
-    url = 'https://github.com/tuusuario'
+    url = 'https://linkedin.com/yourname'
     weight = 40
     [menus.social.params]
       icon = 'linkedin'
