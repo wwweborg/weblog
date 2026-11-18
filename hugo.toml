@@ -2,6 +2,9 @@ baseURL = 'https://example.org/'
 locale = 'en-US'
 title = 'Weblog'
 
+[markup.highlight]
+  noClasses = false
+
 [params]
   handle = '@yourname'
   avatar = '/images/avatar.png'

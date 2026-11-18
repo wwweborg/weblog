@@ -23,6 +23,7 @@
 @import url('/css/components/header.css');
 @import url('/css/components/hero.css');
 @import url('/css/components/posts.css');
+@import url('/css/components/footer.css');
 
 /* [ Font Family: Golos Text ] */
 @font-face {
@@ -56,6 +57,14 @@
 
   --fontSans: 'Golos Text', system-ui, -apple-system;
   --fontMono: 'Roboto Mono', ui-monospace, "SF Mono";
+
+  --code-text: light-dark(#24292F, #E6EDF3);
+  --code-keyword: light-dark(#8250DF, #D2A8FF);
+  --code-string: light-dark(#0A7B32, #A5D6FF);
+  --code-number: light-dark(#0550AE, #79C0FF);
+  --code-function: light-dark(#8250DF, #D2A8FF);
+  --code-comment: light-dark(#6E7781, #8B949E);
+  --code-operator: light-dark(#CF222E, #FF7B72);
 }
 
 body {
@@ -76,4 +85,3 @@ header, main, footer {
 code, pre {
   font-family: var(--fontMono);
 }
-

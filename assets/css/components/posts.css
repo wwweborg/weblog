@@ -146,9 +146,73 @@
   padding: 1rem 1.25rem;
   border-radius: 0.75rem;
   background: var(--sf) !important;
+  color: var(--code-text);
   font-size: 1rem;
   line-height: 1.65;
   tab-size: 2;
+}
+
+.entry__content .chroma {
+  color: var(--code-text);
+  background: var(--code-bg);
+}
+
+.entry__content .chroma .k,
+.entry__content .chroma .kc,
+.entry__content .chroma .kd,
+.entry__content .chroma .kn,
+.entry__content .chroma .kp,
+.entry__content .chroma .kr,
+.entry__content .chroma .kt {
+  color: var(--code-keyword);
+}
+
+.entry__content .chroma .s,
+.entry__content .chroma .sa,
+.entry__content .chroma .sb,
+.entry__content .chroma .sc,
+.entry__content .chroma .dl,
+.entry__content .chroma .sd,
+.entry__content .chroma .s2,
+.entry__content .chroma .se,
+.entry__content .chroma .sh,
+.entry__content .chroma .si,
+.entry__content .chroma .sx,
+.entry__content .chroma .sr,
+.entry__content .chroma .s1,
+.entry__content .chroma .ss {
+  color: var(--code-string);
+}
+
+.entry__content .chroma .m,
+.entry__content .chroma .mb,
+.entry__content .chroma .mf,
+.entry__content .chroma .mh,
+.entry__content .chroma .mi,
+.entry__content .chroma .il,
+.entry__content .chroma .mo {
+  color: var(--code-number);
+}
+
+.entry__content .chroma .nf,
+.entry__content .chroma .fm {
+  color: var(--code-function);
+}
+
+.entry__content .chroma .c,
+.entry__content .chroma .ch,
+.entry__content .chroma .cm,
+.entry__content .chroma .c1,
+.entry__content .chroma .cs,
+.entry__content .chroma .cp,
+.entry__content .chroma .cpf {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+.entry__content .chroma .o,
+.entry__content .chroma .ow {
+  color: var(--code-operator);
 }
 
 .entry__content :not(pre) > code {
@@ -190,8 +254,8 @@
 /* [ Tags shown below the article ] */
 .entry--post > div:last-child {
   margin-top: 3rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--border);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .entry--post > div:last-child ul {
@@ -228,7 +292,7 @@
   }
 
   .entry__header h1 {
-    font-size: clamp(2.15rem, 12vw, 3.25rem);
+    font-size: clamp(2.15rem, 12vw, 2rem);
   }
 
   .entry__content {

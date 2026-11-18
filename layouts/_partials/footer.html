@@ -1,1 +1,8 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<div class="footer__content">
+  <p class="footer__brand">© {{ now.Format "2006" }} {{ site.Title }}</p>
+  <nav class="footer__links" aria-label="Enlaces legales">
+    <a href="{{ "privacy-policies/" | relURL }}">Política de privacidad</a>
+    <a href="{{ "terms/" | relURL }}">Términos</a>
+  </nav>
+</div>
+ 
