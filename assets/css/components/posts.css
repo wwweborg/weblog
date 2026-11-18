@@ -162,10 +162,14 @@
 
 .entry__content img {
   display: block;
-  max-width: 100%;
+  width: 120%;
+  max-width: none;
   height: auto;
-  margin: 2.25rem auto;
-  border-radius: 0.75rem;
+  margin: 2.25rem 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.4rem;
 }
 
 .entry__content figure {
@@ -318,6 +322,10 @@
 .entry--post > div:last-child li a:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.postsP p {
+  padding: 0 0 2rem 0;
 }
 
 @media (max-width: 640px) {

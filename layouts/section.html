@@ -6,10 +6,11 @@
   {{ range $paginator.Pages }}
     <article class="post-card">
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      <div class="post-card__summary">{{ .Summary | plainify | truncate 150 }}</div>
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-      <div class="post-card__summary">{{ .Summary }}</div>
     </article>
   {{ end }}
   </div>
   {{ partial "pagination.html" (dict "paginator" $paginator) }}
 {{ end }}
+ 
