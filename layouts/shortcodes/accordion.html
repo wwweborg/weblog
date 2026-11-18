@@ -1,0 +1,4 @@
+<details class="sc-accordion" {{ with .Get "open" }}{{ if . }}open{{ end }}{{ end }}>
+  <summary>{{ .Get "title" | default "Ver más" }}</summary>
+  <div class="sc-accordion__body">{{ .Page.RenderString .Inner }}</div>
+</details>

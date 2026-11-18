@@ -1,0 +1,11 @@
+{{- $repo := .Get "repo" -}}
+{{- $description := .Get "description" -}}
+{{- $image := .Get "image" | default (printf "https://opengraph.githubassets.com/1/%s" $repo) -}}
+<a class="sc-repo" href="https://github.com/{{ $repo }}" target="_blank" rel="noopener noreferrer">
+  <img class="sc-repo__image" src="{{ $image }}" alt="Vista previa de GitHub para {{ $repo }}" loading="lazy">
+  <span class="sc-repo__details">
+    <strong>{{ $repo }}</strong>
+    {{ with $description }}<span>{{ . }}</span>{{ end }}
+    <small>Ver repositorio en GitHub ↗</small>
+  </span>
+</a>

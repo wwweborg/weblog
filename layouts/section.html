@@ -6,7 +6,11 @@
   {{ range $paginator.Pages }}
     <article class="post-card">
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      <div class="post-card__summary">{{ .Summary | plainify | truncate 150 }}</div>
+      {{ with .Description }}
+        <p class="post-card__description">{{ . }}</p>
+      {{ else }}
+        <p class="post-card__description">{{ .Summary | plainify | truncate 150 }}</p>
+      {{ end }}
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
     </article>
   {{ end }}

@@ -1,0 +1,7 @@
+{{- $type := .Get "type" | default "info" -}}
+{{- if not (in (slice "info" "alert" "warning") $type) }}{{ $type = "info" }}{{ end -}}
+{{- $titles := dict "info" "Información" "alert" "Importante" "warning" "Advertencia" -}}
+{{- $title := .Get "title" | default (index $titles $type) -}}
+<aside class="sc-callout sc-callout--{{ $type }}" role="note">
+  <div class="sc-callout__body">{{ .Page.RenderString .Inner }}</div>
+</aside>

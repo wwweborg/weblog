@@ -1,0 +1,6 @@
+{{- $href := .Get "href" | default "#" -}}
+{{- $variant := .Get "variant" | default "primary" -}}
+<a class="sc-button sc-button--{{ $variant }}" href="{{ $href }}">
+  {{ with .Get "icon" }}<span class="sc-button__icon" aria-hidden="true">{{ . }}</span>{{ end }}
+  {{ .Inner | strings.TrimSpace }}
+</a>

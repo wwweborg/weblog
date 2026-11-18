@@ -1,0 +1,7 @@
+{{- $group := printf "code-tabs-%d" .Parent.Ordinal -}}
+{{- $id := printf "%s-tab-%d" $group .Ordinal -}}
+<input class="sc-code-tabs__input" type="radio" id="{{ $id }}" name="{{ $group }}" {{ if eq .Ordinal 0 }}checked{{ end }}>
+<label class="sc-code-tabs__label" for="{{ $id }}">{{ .Get "title" }}</label>
+<div class="sc-code-tabs__panel">
+  {{ transform.Highlight $.InnerDeindent (.Get "lang" | default "text") }}
+</div>

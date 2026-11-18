@@ -36,13 +36,18 @@
   font-size: 0.8rem;
 }
 
-.post-card__summary {
+.post-card__description {
   margin-top: 0.65rem;
   color: var(--muted);
+  font-size: 0.95rem;
 }
 
-.post-card__summary p {
-  margin: 0;
+.entry__description {
+  max-width: 58ch;
+  margin: 0.9rem 0 1rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.6;
 }
 
 .pagination {
@@ -155,7 +160,7 @@
 }
 
 .entry__content a {
-  color: var(--accent);
+  color: var(--text);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
