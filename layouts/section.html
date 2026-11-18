@@ -1,8 +1,9 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+  {{ $paginator := .Paginate .Pages.ByDate.Reverse }}
   <div class="post-list">
-  {{ range .Pages }}
+  {{ range $paginator.Pages }}
     <article class="post-card">
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
@@ -10,4 +11,5 @@
     </article>
   {{ end }}
   </div>
+  {{ partial "pagination.html" (dict "paginator" $paginator) }}
 {{ end }}

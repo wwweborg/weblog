@@ -5,6 +5,9 @@ title = 'Weblog'
 [markup.highlight]
   noClasses = false
 
+[pagination]
+  pagerSize = 5
+
 [params]
   handle = '@yourname'
   avatar = '/images/avatar.png'

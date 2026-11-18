@@ -1,0 +1,18 @@
+{{- $pager := .paginator -}}
+{{- if gt $pager.TotalPages 1 }}
+  <nav class="pagination" aria-label="Paginación de entradas">
+    {{ if $pager.HasPrev }}
+      <a href="{{ $pager.Prev.URL }}" rel="prev">← Anterior</a>
+    {{ else }}
+      <span class="pagination__disabled">← Anterior</span>
+    {{ end }}
+
+    <span class="pagination__status">Página {{ $pager.PageNumber }} de {{ $pager.TotalPages }}</span>
+
+    {{ if $pager.HasNext }}
+      <a href="{{ $pager.Next.URL }}" rel="next">Siguiente →</a>
+    {{ else }}
+      <span class="pagination__disabled">Siguiente →</span>
+    {{ end }}
+  </nav>
+{{- end }}

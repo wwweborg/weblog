@@ -1,7 +1,9 @@
 {{ define "main" }}
   {{ .Content }}
+  {{ $pages := where site.RegularPages "Section" "posts" }}
+  {{ $paginator := .Paginate $pages.ByDate.Reverse }}
   <div class="post-list">
-  {{ range where site.RegularPages "Section" "posts" }}
+  {{ range $paginator.Pages }}
     <article class="post-card">
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       <div class="post-card__summary">{{ .Summary | plainify | truncate 100 }}</div>
@@ -9,4 +11,5 @@
     </article>
   {{ end }}
   </div>
+  {{ partial "pagination.html" (dict "paginator" $paginator) }}
 {{ end }}
