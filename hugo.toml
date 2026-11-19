@@ -36,7 +36,7 @@ title = 'Weblog'
 
   [[menus.social]]
     name = 'GitHub'
-    url = 'https://github.com/yourname'
+    url = 'https://github.com/wwweborg/weblog'
     weight = 10
     [menus.social.params]
       icon = 'github'
