@@ -2,3 +2,5 @@ public/
 resources/
 .hugo_build.lock
 IDEAS.md
+/data
+/i18n
