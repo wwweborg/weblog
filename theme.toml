@@ -1,9 +1,9 @@
 name = "Weblog"
 license = "MIT"
-licenselink = "https://github.com/wwweborg/weblog/blob/main/LICENSE"
+licenselink = "https://github.com/wwweborg/weblog/blob/main/LICENCE"
 description = "A minimalist Hugo theme for a developer's personal journal."
 homepage = "https://github.com/wwweborg/weblog"
-demosite = "https://tu-demo.example"
+demosite = "https://wwweblog.netlify.app/"
 tags = ["blog", "minimal", "dark", "responsive", "personal"]
 features = ["Automatic light and dark mode", "Floating capsule header", "Self-hosted fonts"]
 

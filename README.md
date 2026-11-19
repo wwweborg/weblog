@@ -4,9 +4,9 @@ A minimalist Hugo theme for a developer's personal journal.
 Floating capsule header, automatic light/dark mode, self-hosted
 fonts and a subtle noise background.
 
-![Screenshot](https://raw.githubusercontent.com/TUUSUARIO/weblog/main/images/screenshot.png)
+![Screenshot](https://github.com/wwweborg/weblog/blob/main/images/screenshot.png)
 
-[Live demo](https://tu-demo.example) · [Report an issue](https://github.com/TUUSUARIO/weblog/issues)
+[Live demo](https://wwweblog.netlify.app/) · [Report an issue](https://github.com/wwweborg/weblog/issues)
 
 ## Features
 
@@ -18,7 +18,7 @@ fonts and a subtle noise background.
 
 ## Requirements
 
-Hugo 0.146.0 or later.
+Hugo 0.170.1 or later.
 
 ## Installation
 
