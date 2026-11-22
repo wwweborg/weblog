@@ -4,7 +4,7 @@ A minimalist Hugo theme for a developer's personal journal.
 Floating capsule header, automatic light/dark mode, self-hosted
 fonts and a subtle noise background.
 
-![Screenshot](https://github.com/wwweborg/weblog/blob/main/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/wwweborg/weblog/refs/heads/main/images/screenshot.png)
 
 [Live demo](https://wwweblog.netlify.app/) · [Report an issue](https://github.com/wwweborg/weblog/issues)
 
@@ -37,7 +37,7 @@ hugo mod init github.com/you/your-site
 ### As a Git submodule
 
 ```bash
-git submodule add https://github.com/wwweblog/weblog themes/weblog
+git submodule add https://github.com/wwweborg/weblog themes/weblog
 ```
 
 ```toml
@@ -49,7 +49,7 @@ theme = 'weblog'
 ```toml
 [params]
   handle = '@yourname'
-  avatar = '/images/avatar.webp'        # place the image in static/
+  avatar = '/images/avatar.webp'   # file at static/images/avatar.webp
 
 [menus]
   [[menus.main]]

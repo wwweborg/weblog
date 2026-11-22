@@ -1,6 +1,6 @@
 name = "Weblog"
 license = "MIT"
-licenselink = "https://github.com/wwweborg/weblog/blob/main/LICENCE"
+licenselink = "https://github.com/wwweborg/weblog/blob/main/LICENSE"
 description = "A minimalist Hugo theme for a developer's personal journal."
 homepage = "https://github.com/wwweborg/weblog"
 demosite = "https://wwweblog.netlify.app/"
