@@ -10,7 +10,7 @@ title = 'Weblog'
 
 [params]
   handle = '@yourname'
-  avatar = '/images/avatar.png'
+  avatar = '/images/avatar.webp'
 
 [menus]
   [[menus.main]]
@@ -61,3 +61,8 @@ title = 'Weblog'
     weight = 40
     [menus.social.params]
       icon = 'linkedin'
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.170.1"

@@ -26,7 +26,6 @@ body > header {
     padding: 0.25rem;
     background: var(--sf);
     border-radius: 5rem;
-    corner-shape: superellipse(1);
 }
 
 .profile {
@@ -80,4 +79,10 @@ nav.capsule a[aria-current="page"] {
 /* Los iconos de marcas no traen "fill", así que se pintan del color del texto */
 .icon svg:not([fill]) {
   fill: currentColor;
+}
+
+@media screen and (max-width: 720px) {
+  .capsule img {
+    padding: .25rem 0;
+  }
 }

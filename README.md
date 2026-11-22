@@ -31,13 +31,13 @@ hugo mod init github.com/you/your-site
 ```toml
 [module]
   [[module.imports]]
-    path = 'github.com/TUUSUARIO/weblog'
+    path = 'github.com/wwweborg/weblog'
 ```
 
 ### As a Git submodule
 
 ```bash
-git submodule add https://github.com/TUUSUARIO/weblog themes/weblog
+git submodule add https://github.com/wwweblog/weblog themes/weblog
 ```
 
 ```toml
@@ -49,7 +49,7 @@ theme = 'weblog'
 ```toml
 [params]
   handle = '@yourname'
-  avatar = 'avatar.jpg'        # place the image in static/
+  avatar = '/images/avatar.webp'        # place the image in static/
 
 [menus]
   [[menus.main]]
@@ -79,7 +79,7 @@ an SVG into your site's `assets/icons/` folder.
 
 - [Golos Text](https://fonts.google.com/specimen/Golos+Text) and
   [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono), SIL Open Font License 1.1
-- [Meteor Icons](https://github.com/meteor-icons/meteor-icons), MIT License
+- [Meteor Icons](https://meteoricons.com/), MIT License
 
 ## License
 
